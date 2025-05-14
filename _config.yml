@@ -9,22 +9,24 @@ menu:
   # 添加其他页面格式举例：
   关于: /about/ # 需要hexo new page about
   标签: /tags/ #需要hexo new page tags
-  # 分类: /categories/ # 需要hexo new page categories
+  分类: /categories/ # 需要hexo new page categories
   # ...
 
 # 首页你想要展示的menu链接，注意当你修改了menu中的别名，这里要随着更改，不然你会疑惑怎么首页没有修改后的别名
 showInMenu:  # menu 中的哪些页面显示在首页中（“首页”必定显示）
    - 文章  # 将在首页显示 文章 链接
-  # - 关于
+   - 关于
   # - 标签
   # - 分类
 
 index:  # 首页相关配置
   header:  # 首页的页眉 以及 404页面，当你没开启一言，将会每次刷新页面随机展示下面的语句
-    - "迷途未远，往观四荒"
+    - "行迷未远，往观四荒"
     #- "人山人海，人来人往"
     #- "看过大海的人不会忘记海的广阔"
     # ...
+  content:
+
   hitokoto: false # 一言：调用网络语句展示的接口
   footer: Email:hengyig2024@163.com # 除了可以填写任何文字外，可以自动邮箱链接化，但需按照这个格式填写：Email:xxx@gmail.com
   titlePosition: left # center | left  # 首页标题的位置
@@ -45,7 +47,7 @@ post:
   titlePosition: center # left ｜ center 文章标题的位置
   
 # 相对于source目录下的头像url
-favicon: /img/favicon.webp # 默认方形头像
+favicon: /images/avatar.jpg # 默认方形头像
 isRoundedAvatar: false # 是否圆形头像
 isAvatarRotating: false # 圆形头像是否开启悬浮旋转
 
@@ -117,8 +119,10 @@ color:
 # A4背景引入图片
 # 图片你应该先放到 source下，下面选项的图片路径 即为 相对于 source 目录的路径
 imageShow:
-  enable: false
-  background: /img/favicon.webp # 最底部层背景
+  enable: true
+  background: /images/bg.jpg # 最底部层背景
+  opacity: 0.5
+  blur: true
 
 # A4默认中文使用霞鹜文楷，如果你想关闭这种字体，首先保证enable为 true 接着可以开关对应字体
 font:
